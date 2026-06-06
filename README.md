@@ -29,13 +29,13 @@ Most agent benchmarks score a single number ("did the agent get the right answer
 ```mermaid
 flowchart LR
   A[Task generator] --> B[ReAct agent loop]
-  B -->|tool calls| C[Tool registry\n(search, retrieve, summarize, citation_check)]
+  B -->|tool calls| C["Tool registry\n(search, retrieve, summarize, citation_check)"]
   C --> B
   B --> D[Trajectory]
-  D --> E[Judge council\n(strict + lenient + token-overlap)]
+  D --> E["Judge council\n(strict + lenient + token-overlap)"]
   E --> F[Per-task metrics]
   D --> F
-  F --> G[Aggregate metrics\n+ 5 chart families]
+  F --> G["Aggregate metrics\n+ 5 chart families"]
 ```
 
 ## Judge council

@@ -39,10 +39,10 @@ The ReAct framework [Yao et al. 2022] introduced the action-then-observation pro
 ```mermaid
 flowchart LR
   A[Task generator] --> B[ReAct agent loop]
-  B -->|tool call| C[Tool registry\n(search, retrieve, summarize, citation_check)]
+  B -->|tool call| C["Tool registry\n(search, retrieve, summarize, citation_check)"]
   C --> B
   B --> D[Trajectory]
-  D --> E[Judge council\n(strict + lenient + token_overlap)]
+  D --> E["Judge council\n(strict + lenient + token_overlap)"]
   E --> F[Per-task metrics]
   F --> G[5 chart families + summary.json]
 ```
