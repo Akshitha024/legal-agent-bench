@@ -1,0 +1,27 @@
+...............                                                          [100%]
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.13.3-final-0 _______________
+
+Name                                        Stmts   Miss  Cover
+---------------------------------------------------------------
+src/legal_agent_bench/__init__.py               1      0   100%
+src/legal_agent_bench/agent/__init__.py         0      0   100%
+src/legal_agent_bench/agent/policies.py        19      0   100%
+src/legal_agent_bench/agent/react.py           33      3    91%
+src/legal_agent_bench/cli/__init__.py           0      0   100%
+src/legal_agent_bench/cli/main.py              24     24     0%
+src/legal_agent_bench/judges/__init__.py        0      0   100%
+src/legal_agent_bench/judges/council.py        29      1    97%
+src/legal_agent_bench/metrics/__init__.py       0      0   100%
+src/legal_agent_bench/metrics/score.py         40      4    90%
+src/legal_agent_bench/runner.py                39      0   100%
+src/legal_agent_bench/tasks/__init__.py         0      0   100%
+src/legal_agent_bench/tasks/synthetic.py       18      0   100%
+src/legal_agent_bench/tools/__init__.py         0      0   100%
+src/legal_agent_bench/tools/registry.py        54     12    78%
+src/legal_agent_bench/types.py                 36      0   100%
+src/legal_agent_bench/viz/__init__.py           0      0   100%
+src/legal_agent_bench/viz/charts.py            71      0   100%
+---------------------------------------------------------------
+TOTAL                                         364     44    88%
+15 passed in 0.69s

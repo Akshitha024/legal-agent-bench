@@ -1,0 +1,55 @@
+[project]
+name = "legal-agent-bench"
+version = "0.3.0"
+description = "Benchmark for tool-using legal-research agents: task success, action efficiency, tool-call precision, cost-per-task, replan rate, all scored by a Karpathy-style LLM judge council"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Akshitha Reddy Lingampally" }]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "matplotlib>=3.8",
+    "typer>=0.9",
+    "rich>=13.7",
+    "pydantic>=2.5",
+    "anyio>=4.2",
+    "rank-bm25>=0.2.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+    "mypy>=1.8",
+    "hypothesis>=6.99",
+    "types-requests",
+]
+
+[project.scripts]
+lab = "legal_agent_bench.cli.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/legal_agent_bench"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF", "TID", "PT"]
+ignore = ["B008"]
+
+[tool.mypy]
+strict = true
+python_version = "3.11"
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

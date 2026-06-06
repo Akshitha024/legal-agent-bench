@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.3, pytest-9.0.3, pluggy-1.6.0 -- /Users/mani/Projects/akshitha-portfolio/projects/legal-agent-bench/.venv/bin/python3
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: /Users/mani/Projects/akshitha-portfolio/projects/legal-agent-bench
+configfile: pyproject.toml
+testpaths: tests
+plugins: hypothesis-6.155.2, cov-7.1.0, anyio-4.13.0
+collecting ... collected 15 items
+
+tests/test_agent.py::test_mock_policy_takes_two_steps PASSED             [  6%]
+tests/test_agent.py::test_confused_policy_replans PASSED                 [ 13%]
+tests/test_agent.py::test_total_cost_accumulates PASSED                  [ 20%]
+tests/test_judges.py::test_strict_judge_exact_match PASSED               [ 26%]
+tests/test_judges.py::test_lenient_judge_substring PASSED                [ 33%]
+tests/test_judges.py::test_token_overlap_threshold PASSED                [ 40%]
+tests/test_judges.py::test_council_majority_vote PASSED                  [ 46%]
+tests/test_metrics.py::test_optimal_efficiency_when_steps_match_min PASSED [ 53%]
+tests/test_metrics.py::test_precision_low_when_summarize_repeated PASSED [ 60%]
+tests/test_metrics.py::test_aggregate_handles_empty PASSED               [ 66%]
+tests/test_runner.py::test_runner_smoke PASSED                           [ 73%]
+tests/test_tasks.py::test_default_emits_correct_count PASSED             [ 80%]
+tests/test_tasks.py::test_task_ids_unique PASSED                         [ 86%]
+tests/test_tasks.py::test_each_kind_present PASSED                       [ 93%]
+tests/test_tasks.py::test_each_task_has_at_least_one_doc PASSED          [100%]
+
+============================== 15 passed in 0.48s ==============================
