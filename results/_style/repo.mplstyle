@@ -1,0 +1,21 @@
+# Reckoning Day palette for this repo. Re-rendered charts pick this up.
+axes.facecolor: #F0F4F8
+figure.facecolor: #F0F4F8
+axes.edgecolor: #1c1c1c
+axes.labelcolor: #1c1c1c
+axes.titlecolor: #1c1c1c
+axes.titleweight: bold
+xtick.color: #1c1c1c
+ytick.color: #1c1c1c
+grid.color: #CFD8DC
+grid.alpha: 0.5
+axes.grid: True
+axes.spines.top: False
+axes.spines.right: False
+axes.prop_cycle: cycler('color', [#0B132B, #1C2541, #3A506B, #5BC0BE, #6FFFE9, #FFB400])
+font.family: sans-serif
+font.sans-serif: Helvetica, Arial, DejaVu Sans
+font.size: 10
+figure.titlesize: 14
+figure.titleweight: bold
+image.cmap: BuPu
